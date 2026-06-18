@@ -1,0 +1,440 @@
+{
+  "header": {
+    "search": "Search game titles",
+    "login": "Login",
+    "register": "Sign Up",
+    "nav": {
+      "pc": "PC Games",
+      "mobile": "Mobile Games",
+      "other": "Other",
+      "all": "All Titles"
+    }
+  },
+  "userMenu": {
+    "loading": "Loading...",
+    "login": "Login",
+    "signup": "Sign Up",
+    "settings": "Settings",
+    "logout": "Logout",
+    "signingOut": "Signing out..."
+  },
+  "home": {
+    "rankingTitle": "Popular Game Rankings",
+    "mobileRanking": "Mobile Games Ranking",
+    "pcRanking": "PC Games Ranking",
+    "listingsTitle": "Latest Listings",
+    "listingUnit": "listings"
+  },
+  "category": {
+    "title": "Game Title List",
+    "pc": "PC Games",
+    "mobile": "Mobile Games",
+    "other": "Other"
+  },
+  "sidebar": {
+    "categoryTitle": "Categories",
+    "searchTitle": "Search Titles",
+    "searchPlaceholder": "Enter game name",
+    "bannerSignupAlt": "Sign up banner",
+    "bannerPcAlt": "PC games banner",
+    "bannerMobileAlt": "Mobile games banner"
+  },
+  "footer": {
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "contact": "Contact Us",
+    "guide": "User Guide"
+  },
+  "carousel": {
+    "slide1": "24/7 Real-Time Trading Available",
+    "slide2": "Beginner-Friendly Trading Guide",
+    "slide3": "Multiple Payment Methods Supported"
+  },
+  "game": {
+    "listingsTitle": "Listings for {name}",
+    "noListings": "No listings available"
+  },
+  "signup": {
+    "title": "Create your account",
+    "subtitle": "Sign up to start checkout and manage your Lootify profile.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "displayName": "Display name",
+    "email": "Email address",
+    "password": "Password",
+    "country": "Country",
+    "phone": "Phone number",
+    "marketing": "Receive occasional marketplace updates.",
+    "submit": "Create Account",
+    "submitting": "Creating account...",
+    "haveAccount": "Already registered?",
+    "signin": "Sign in"
+  },
+  "verifyEmail": {
+    "title": "Verify your email",
+    "subtitle": "Enter the 6-digit code sent to {email}.",
+    "fallbackInbox": "your inbox",
+    "code": "Verification code",
+    "submit": "Verify Email",
+    "verifying": "Verifying...",
+    "resend": "Resend Code",
+    "sending": "Sending...",
+    "resendSuccess": "A new verification code has been sent.",
+    "back": "Return to login"
+  },
+  "login": {
+    "title": "Sign in",
+    "subtitle": "Access your Lootify account to continue checkout.",
+    "verified": "Your email has been verified. Please sign in.",
+    "email": "Email address",
+    "password": "Password",
+    "submit": "Login",
+    "submitting": "Signing in...",
+    "needAccount": "Need an account?",
+    "createOne": "Create one"
+  },
+  "account": {
+    "profile": {
+      "loading": "Loading profile...",
+      "signinRequired": "You need to sign in to view your profile.",
+      "title": "My Profile",
+      "subtitle": "Your account details and recent activity snapshot.",
+      "editSettings": "Edit Settings",
+      "displayName": "Display Name",
+      "email": "Email",
+      "fullName": "Full Name",
+      "country": "Country",
+      "notSet": "Not set",
+      "accountStatus": "Account status",
+      "status": "Status",
+      "emailVerified": "Email verified",
+      "verified": "Verified",
+      "notVerified": "Not verified",
+      "lastLogin": "Last login",
+      "noLoginHistory": "No login history yet",
+      "walletAddress": "EP Wallet"
+    },
+    "settings": {
+      "loading": "Loading settings...",
+      "signinRequired": "You need to sign in to update account settings.",
+      "title": "Account Settings",
+      "subtitle": "Update your display name, contact information, and other profile details.",
+      "saved": "Your changes have been saved.",
+      "displayName": "Display Name",
+      "country": "Country",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "emailNote": "Email address cannot be changed in this version.",
+      "save": "Save Changes"
+    }
+  },
+  "item": {
+    "gameLabel": "Game",
+    "categoryLabel": "Category",
+    "deliveryLabel": "Delivery",
+    "availabilityLabel": "Availability",
+    "digitalGoods": "Digital Goods",
+    "deliveryValue": "Within 24 hours",
+    "availabilityValue": "In Stock",
+    "sellerLabel": "Seller",
+    "sellerValue": "Verified Seller | 100% positive feedback",
+    "priceNote": "Fixed price | No hidden fees",
+    "buyNow": "Buy Now",
+    "badge1": "Secure Checkout",
+    "badge2": "Trusted Marketplace",
+    "badge3": "Protected Purchase Flow"
+  },
+  "checkout": {
+    "title": "Secure Checkout",
+    "subtitle": "Review your item details before continuing.",
+    "createDraftError": "Unable to create checkout session.",
+    "unexpectedError": "Something went wrong. Please try again.",
+    "itemDetails": "Item Details",
+    "delivery": "Delivery: within 24 hours",
+    "digitalDelivery": "Digital delivery, no shipping required.",
+    "paymentNote": "Your payment will not be processed until you proceed.",
+    "orderSummary": "Order Summary",
+    "itemLabel": "Item",
+    "quantityLabel": "Quantity",
+    "totalLabel": "Total",
+    "continue": "Continue to Payment",
+    "processing": "Processing...",
+    "badge1": "Secure Checkout",
+    "badge2": "Protected Purchase Flow"
+  },
+  "paymentMock": {
+    "title": "Payment Gateway Not Yet Live",
+    "line1": "Your checkout session has been created successfully.",
+    "line2": "The payment gateway is currently in test mode and has not been enabled yet.",
+    "line3": "This flow is ready for future live payment integration.",
+    "tokenLabel": "Checkout Token",
+    "statusLabel": "Payment Status",
+    "statusValue": "Disabled / Test Mode",
+    "home": "Return to Home",
+    "profile": "Go to My Purchases"
+  },
+  "lifai": {
+    "eyebrow": "LIFAI OTC",
+    "landingTitle": "Sell EP and settle in USDT",
+    "landingBody": "LIFAI lets you submit an EP sell request, review the payout plan, send EP to the platform wallet, and receive USDT to your own wallet after verification.",
+    "cards": {
+      "planTitle": "1. Review the plan",
+      "planBody": "Choose the payout plan that matches your volume and confirm the fee and estimated USDT rate before submitting.",
+      "transferTitle": "2. Send EP",
+      "transferBody": "After the request is approved, send the exact EP amount to the designated LIFAI platform wallet number.",
+      "payoutTitle": "3. Receive USDT",
+      "payoutBody": "Once the transfer is verified, USDT is released to the wallet address you specified in the request."
+    },
+    "walletHint": "Only transfer EP after your sell request is submitted and the plan details are confirmed.",
+    "startSellRequest": "Start EP Sell Request",
+    "acceptedNetworks": "Supported payout networks: TRC20, ERC20, BEP20",
+    "sellTitle": "LIFAI EP Sell Request",
+    "sellSubtitle": "Confirm your plan, enter the EP transfer details, and choose the USDT destination wallet that should receive your payout.",
+    "planHeading": "Choose a payout plan",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "desc": "Best for first-time or low-volume sellers. (4 EP = ¥1)"
+      },
+      "builder": {
+        "name": "Builder",
+        "desc": "Balanced plan for recurring EP sellers. (3.5 EP = ¥1)"
+      },
+      "automation": {
+        "name": "Automation",
+        "desc": "Efficient plan for active sellers. (3 EP = ¥1)"
+      },
+      "core": {
+        "name": "Core",
+        "desc": "Core-level plan for serious sellers. (2.5 EP = ¥1)"
+      },
+      "infra": {
+        "name": "Infra",
+        "desc": "Top-tier plan for high-volume members. (2 EP = ¥1)"
+      }
+    },
+    "epRateLabel": "EP rate",
+    "epRateValue": "¥{rate} / EP",
+    "feeLabel": "Service fee",
+    "feeValue": "8.5%",
+    "grossLabel": "Before fee",
+    "netLabel": "Estimated payout",
+    "usdtRateLabel": "JPY/USDT rate",
+    "rateUpdatedAt": "Rate as of {time} JST",
+    "walletSectionTitle": "Your EP receiving wallet",
+    "walletPersonalNote": "Send your EP to this address",
+    "walletNextRotate": "Rotates in {time}",
+    "walletLoading": "Fetching wallet info...",
+    "submittingRequest": "Sending...",
+    "submitSuccess": "Request ID: {id} — A staff member will review and confirm.",
+    "submitError": "Submission failed. Please try again shortly.",
+    "epAmount": "EP amount to sell",
+    "sourceWallet": "Your LIFAI EP wallet number",
+    "sourceWalletPlaceholder": "Example: LIFAI-USER-001122",
+    "payoutNetwork": "USDT payout network",
+    "payoutWallet": "Your USDT wallet address",
+    "payoutWalletPlaceholder": "Paste your destination wallet address",
+    "planConfirmed": "I reviewed the selected plan, fee, and estimated payout before submitting.",
+    "transferConfirmed": "I understand that I must send the exact EP amount to the LIFAI platform wallet after the request is confirmed.",
+    "walletConfirmed": "I confirm that the payout wallet belongs to me and can receive USDT on the selected network.",
+    "submitRequest": "Submit Sell Request",
+    "summaryHeading": "Estimated settlement",
+    "selectedPlan": "Selected plan",
+    "epLabel": "EP amount",
+    "networkLabel": "Payout network",
+    "stepsHeading": "How settlement works",
+    "steps": {
+      "1": "Submit the sell request and check your personal wallet address (LFW-XXXXXX).",
+      "2": "Use the 'Send to LFW' feature in aisalon to transfer EP to the displayed address.",
+      "3": "Lootify automatically verifies the EP deposit (may take a few minutes).",
+      "4": "Once confirmed, USDT is sent to your designated payout wallet."
+    },
+    "warningTitle": "Important — Please Read Carefully",
+    "warningBody": "• EP transfers are final and non-refundable under any circumstances. Treat them like cryptocurrency transactions.\n• Deposit confirmation may take a few minutes. Do not close the page until confirmation is complete.\n• Transfers to incorrect addresses or amounts that differ from your request are not covered.",
+    "backToLifai": "Back to LIFAI overview",
+    "sendEpTitle": "Send EP from LIFAIOV",
+    "sendEpInstruction": "On the LIFAIOV GiftEP send page, enter the address below as the recipient.",
+    "sendEpAmountNote": "Amount to send: {amount} EP",
+    "payoutWalletError": "Please enter your USDT payout wallet address.",
+    "depositWaiting": "⏳ Waiting for EP deposit...",
+    "depositConfirmed": "✓ EP deposit confirmed. USDT transfer will be initiated.",
+    "depositTimeout": "Deposit confirmation timed out. If you already sent EP, please contact support.",
+    "confirmError": "You must confirm the plan and transfer acknowledgements before submitting.",
+    "epMinimumError": "The minimum sell request is 100 EP.",
+    "walletError": "Failed to load wallet information.",
+    "sellHistoryTitle": "LIFAI EP Sell Request History",
+    "checkDeposit": "Check Deposit",
+    "openRequestExists": "You already have an unfinished sell request. Please complete its deposit first — see the request history in your profile.",
+    "depositInsufficient": "⚠ Insufficient deposit: received {received} EP / {shortfall} EP short. Please send the remaining {shortfall} EP to the same address.",
+    "depositOverpaid": "We received {overpaid} EP more than requested. The excess has been accepted as part of this request.",
+    "recheckDeposit": "Check again",
+    "statusWaiting": "Awaiting deposit",
+    "statusInsufficient": "Insufficient deposit",
+    "statusConfirmed": "Deposit confirmed"
+  },
+  "guide": {
+    "hero": {
+      "eyebrow": "HOW IT WORKS",
+      "title": "The Fastest Way to Trade Game Items",
+      "body": "Lootify helps buyers and sellers trade game items with a simple flow, secure checkout, and clear delivery steps. Browse listings, place an order, and coordinate delivery without leaving the marketplace.",
+      "browse": "Browse Listings",
+      "sell": "Start Selling",
+      "imageLabel": "Marketplace dashboard"
+    },
+    "how": {
+      "steps": [
+        {
+          "title": "Browse",
+          "body": "Choose a game and compare available listings from active sellers."
+        },
+        {
+          "title": "Purchase",
+          "body": "Complete checkout through a guided order flow with clear pricing."
+        },
+        {
+          "title": "Receive",
+          "body": "Coordinate with the seller and receive your item after the order is confirmed."
+        }
+      ]
+    },
+    "buyers": {
+      "eyebrow": "For Buyers",
+      "title": "Start Playing in Minutes",
+      "steps": [
+        {
+          "title": "Create Your Account",
+          "body": "Register with your email address so you can manage purchases and receive order updates.",
+          "imageLabel": "Account setup"
+        },
+        {
+          "title": "Browse Game Listings",
+          "body": "Filter by category and game title, then compare price, delivery timing, and seller details.",
+          "imageLabel": "Listing browser"
+        },
+        {
+          "title": "Place Your Order",
+          "body": "Review the item, confirm the total, and continue through the checkout flow."
+        },
+        {
+          "title": "Receive Your Item",
+          "body": "Follow the delivery instructions and coordinate with the seller until the trade is complete."
+        }
+      ]
+    },
+    "sellers": {
+      "eyebrow": "For Sellers",
+      "title": "Turn Your Game Assets Into Cash",
+      "steps": [
+        {
+          "title": "Create Your Account",
+          "body": "Use the same account flow to prepare your seller profile and manage future listings."
+        },
+        {
+          "title": "List Your Item",
+          "body": "Add the title, price, item details, and delivery notes buyers need before purchasing.",
+          "imageLabel": "Listing form"
+        },
+        {
+          "title": "Get Purchased",
+          "body": "Receive order details when a buyer checks out and prepare the item for delivery."
+        },
+        {
+          "title": "Deliver & Get Paid",
+          "body": "Deliver the item, complete the order confirmation, and track your settlement status.",
+          "imageLabel": "Order complete"
+        }
+      ]
+    },
+    "trust": {
+      "cards": [
+        {
+          "icon": "shield",
+          "title": "Secure Payments",
+          "body": "Checkout is designed around clear order records and protected payment handling."
+        },
+        {
+          "icon": "bolt",
+          "title": "Fast Delivery",
+          "body": "Many listings can be delivered quickly once buyer and seller details are confirmed."
+        },
+        {
+          "icon": "star",
+          "title": "Verified Listings",
+          "body": "Listings surface seller details and trading context so buyers can choose with confidence."
+        }
+      ]
+    },
+    "faq": {
+      "title": "FAQ",
+      "items": [
+        {
+          "title": "What payment methods are accepted?",
+          "body": "Available payment methods are shown during checkout before you confirm the order."
+        },
+        {
+          "title": "Is it safe to trade on Lootify?",
+          "body": "Lootify keeps the trade inside a structured order flow with clear records and support paths."
+        },
+        {
+          "title": "How long does delivery take?",
+          "body": "Delivery depends on the game and seller, but many orders are completed the same day."
+        },
+        {
+          "title": "What if I have a problem with my order?",
+          "body": "Contact support with your order details so the issue can be reviewed and resolved."
+        },
+        {
+          "title": "How do sellers get paid?",
+          "body": "Seller payout is processed after the delivery and order confirmation steps are completed."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "body": "Find your next game item or create a free account to start selling through Lootify.",
+      "browse": "Browse Listings",
+      "create": "Create Free Account"
+    }
+  },
+  "contact": {
+    "eyebrow": "CONTACT",
+    "title": "Contact Us",
+    "subtitle": "Use this form for order, seller, account, or general questions. Our team will review the details and follow up as needed.",
+    "formTitle": "Contact Form",
+    "formSubtitle": "Fill in the details below and submit your inquiry.",
+    "fields": {
+      "name": "Your name",
+      "email": "Email address",
+      "category": "Inquiry type",
+      "categoryPlaceholder": "Select a category",
+      "orderId": "Order ID",
+      "orderIdPlaceholder": "Example: ORD-123456",
+      "subject": "Subject",
+      "message": "Message"
+    },
+    "categories": {
+      "order": "About an order",
+      "seller": "About selling",
+      "account": "About an account",
+      "other": "Other"
+    },
+    "note": "Including your order ID, game title, and a clear description of the issue will help us review your inquiry faster.",
+    "submit": "Send Inquiry",
+    "submitting": "Sending...",
+    "success": {
+      "eyebrow": "SENT",
+      "title": "Your inquiry has been recorded",
+      "body": "Your inquiry has been received. We will review the details and follow up when needed.",
+      "referenceLabel": "Reference ID",
+      "another": "Create Another Inquiry"
+    },
+    "cards": {
+      "responseTitle": "Expected response flow",
+      "responseBody": "Inquiries are reviewed in order, and follow-up is provided when needed.",
+      "includeTitle": "Helpful details to include",
+      "includeBody": "Order ID, game title, what happened, and what you want reviewed will make the inquiry easier to handle.",
+      "scopeTitle": "Planned support coverage",
+      "scopeBody": "Order trouble, listing questions, account issues, and general marketplace inquiries are all supported."
+    }
+  }
+}

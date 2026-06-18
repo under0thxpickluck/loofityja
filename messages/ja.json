@@ -1,0 +1,440 @@
+{
+  "header": {
+    "search": "ゲームタイトルを検索",
+    "login": "ログイン",
+    "register": "新規登録",
+    "nav": {
+      "pc": "PCゲーム",
+      "mobile": "モバイルゲーム",
+      "other": "その他",
+      "all": "すべてのタイトル"
+    }
+  },
+  "userMenu": {
+    "loading": "読み込み中...",
+    "login": "ログイン",
+    "signup": "新規登録",
+    "settings": "設定",
+    "logout": "ログアウト",
+    "signingOut": "ログアウト中..."
+  },
+  "home": {
+    "rankingTitle": "人気ゲームランキング",
+    "mobileRanking": "モバイルゲーム ランキング",
+    "pcRanking": "PCゲーム ランキング",
+    "listingsTitle": "最新の出品",
+    "listingUnit": "件"
+  },
+  "category": {
+    "title": "ゲームタイトル一覧",
+    "pc": "PCゲーム",
+    "mobile": "モバイルゲーム",
+    "other": "その他"
+  },
+  "sidebar": {
+    "categoryTitle": "カテゴリ",
+    "searchTitle": "タイトル検索",
+    "searchPlaceholder": "ゲーム名を入力",
+    "bannerSignupAlt": "新規登録バナー",
+    "bannerPcAlt": "PCゲームバナー",
+    "bannerMobileAlt": "モバイルゲームバナー"
+  },
+  "footer": {
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "contact": "お問い合わせ",
+    "guide": "ご利用ガイド"
+  },
+  "carousel": {
+    "slide1": "24時間365日 リアルタイム取引対応",
+    "slide2": "初心者向け取引ガイド",
+    "slide3": "複数の支払い方法に対応"
+  },
+  "game": {
+    "listingsTitle": "{name} の出品一覧",
+    "noListings": "現在出品はありません"
+  },
+  "signup": {
+    "title": "アカウントを作成",
+    "subtitle": "Lootify の購入機能とプロフィール管理を利用するために登録してください。",
+    "firstName": "名",
+    "lastName": "姓",
+    "displayName": "表示名",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "country": "国",
+    "phone": "電話番号",
+    "marketing": "マーケットプレイスに関するお知らせを受け取る",
+    "submit": "アカウントを作成",
+    "submitting": "作成中...",
+    "haveAccount": "すでにアカウントをお持ちですか？",
+    "signin": "ログイン"
+  },
+  "verifyEmail": {
+    "title": "メールアドレスを確認",
+    "subtitle": "{email} に送信された6桁の確認コードを入力してください。",
+    "fallbackInbox": "あなたのメールアドレス",
+    "code": "確認コード",
+    "submit": "メールを確認",
+    "verifying": "確認中...",
+    "resend": "コードを再送信",
+    "sending": "送信中...",
+    "resendSuccess": "新しい確認コードを送信しました。",
+    "back": "ログインに戻る"
+  },
+  "login": {
+    "title": "ログイン",
+    "subtitle": "Lootify アカウントにアクセスして購入を続けてください。",
+    "verified": "メール確認が完了しました。ログインしてください。",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "submit": "ログイン",
+    "submitting": "ログイン中...",
+    "needAccount": "アカウントをお持ちでないですか？",
+    "createOne": "新規登録"
+  },
+  "account": {
+    "profile": {
+      "loading": "プロフィールを読み込み中...",
+      "signinRequired": "プロフィールを見るにはログインが必要です。",
+      "title": "マイプロフィール",
+      "subtitle": "アカウント情報と最近の利用状況を確認できます。",
+      "editSettings": "設定を編集",
+      "displayName": "表示名",
+      "email": "メール",
+      "fullName": "氏名",
+      "country": "国",
+      "notSet": "未設定",
+      "accountStatus": "アカウント状態",
+      "status": "状態",
+      "emailVerified": "メール確認",
+      "verified": "確認済み",
+      "notVerified": "未確認",
+      "lastLogin": "最終ログイン",
+      "noLoginHistory": "ログイン履歴はまだありません",
+      "walletAddress": "EPウォレット"
+    },
+    "settings": {
+      "loading": "設定を読み込み中...",
+      "signinRequired": "アカウント設定を更新するにはログインが必要です。",
+      "title": "アカウント設定",
+      "subtitle": "表示名や連絡先情報などのプロフィール情報を変更できます。",
+      "saved": "変更が保存されました。",
+      "displayName": "表示名",
+      "country": "国",
+      "phone": "電話番号",
+      "email": "メールアドレス",
+      "emailNote": "このバージョンではメールアドレスは変更できません。",
+      "save": "変更を保存"
+    }
+  },
+  "item": {
+    "gameLabel": "ゲーム",
+    "categoryLabel": "カテゴリ",
+    "deliveryLabel": "受け渡し",
+    "availabilityLabel": "在庫",
+    "digitalGoods": "デジタル商品",
+    "deliveryValue": "24時間以内",
+    "availabilityValue": "在庫あり",
+    "sellerLabel": "販売者",
+    "sellerValue": "認証済み販売者 | 高評価100%",
+    "priceNote": "固定価格 | 隠れた手数料なし",
+    "buyNow": "今すぐ購入",
+    "badge1": "安全なチェックアウト",
+    "badge2": "信頼できるマーケットプレイス",
+    "badge3": "保護された購入フロー"
+  },
+  "checkout": {
+    "title": "安全なチェックアウト",
+    "subtitle": "購入を続ける前に商品の内容をご確認ください。",
+    "createDraftError": "チェックアウトセッションを作成できませんでした。",
+    "unexpectedError": "エラーが発生しました。もう一度お試しください。",
+    "itemDetails": "商品詳細",
+    "delivery": "受け渡し: 24時間以内",
+    "digitalDelivery": "デジタル商品のため配送は不要です。",
+    "paymentNote": "続行するまで決済は実行されません。",
+    "orderSummary": "注文概要",
+    "itemLabel": "商品",
+    "quantityLabel": "数量",
+    "totalLabel": "合計",
+    "continue": "支払いへ進む",
+    "processing": "処理中...",
+    "badge1": "安全なチェックアウト",
+    "badge2": "保護された購入フロー"
+  },
+  "paymentMock": {
+    "title": "決済ゲートウェイはまだ公開されていません",
+    "line1": "チェックアウトセッションは正常に作成されました。",
+    "line2": "決済ゲートウェイは現在テストモードのため、有効化されていません。",
+    "line3": "この購入フローは将来の本番決済連携に対応できる状態です。",
+    "tokenLabel": "チェックアウトトークン",
+    "statusLabel": "決済状態",
+    "statusValue": "無効 / テストモード",
+    "home": "ホームに戻る",
+    "profile": "購入ページへ移動"
+  },
+  "lifai": {
+    "eyebrow": "LIFAI OTC",
+    "landingTitle": "EP を売却して USDT で受け取る",
+    "landingBody": "LIFAI では、売却申請を送信し、プラン内容を確認したうえで指定ウォレットへ EP を送付し、検証完了後に指定したウォレットで USDT を受け取れます。",
+    "cards": {
+      "planTitle": "1. プラン確認",
+      "planBody": "売却量に合うプランを選び、手数料と見込み USDT レートを確認してから申請します。",
+      "transferTitle": "2. EP を送付",
+      "transferBody": "申請確認後、案内された LIFAI 側ウォレット番号に正確な EP 数量を送付します。",
+      "payoutTitle": "3. USDT を受領",
+      "payoutBody": "着金確認後、申請時に指定したウォレットアドレスへ USDT が送金されます。"
+    },
+    "walletHint": "売却申請とプラン確認が完了する前に EP を送付しないでください。",
+    "startSellRequest": "EP 売却申請を開始",
+    "acceptedNetworks": "対応出金ネットワーク: TRC20 / ERC20 / BEP20",
+    "sellTitle": "LIFAI EP 売却申請",
+    "sellSubtitle": "プランを確認し、EP 送付元情報と USDT の受取先ウォレットを入力してください。",
+    "planHeading": "売却プランを選択",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "desc": "初回または少量の売却向け。(4EP = 1円)"
+      },
+      "builder": {
+        "name": "Builder",
+        "desc": "継続的な売却向けの標準プラン。(3.5EP = 1円)"
+      },
+      "automation": {
+        "name": "Automation",
+        "desc": "実践向けの効率プラン。(3EP = 1円)"
+      },
+      "core": {
+        "name": "Core",
+        "desc": "成果を本気で狙う中核プラン。(2.5EP = 1円)"
+      },
+      "infra": {
+        "name": "Infra",
+        "desc": "深く関わる上位メンバー向け。(2EP = 1円)"
+      }
+    },
+    "epRateLabel": "EP単価",
+    "epRateValue": "{rate}円 / EP",
+    "feeLabel": "手数料",
+    "feeValue": "8.5%",
+    "grossLabel": "手数料前",
+    "netLabel": "受取見込み",
+    "usdtRateLabel": "JPY/USDT レート",
+    "rateUpdatedAt": "レート取得: {time} JST",
+    "walletSectionTitle": "あなたのEP受取ウォレット",
+    "walletPersonalNote": "このアドレス宛にEPを送付してください",
+    "walletNextRotate": "次回更新: あと {time}",
+    "walletLoading": "ウォレット情報を取得中...",
+    "submittingRequest": "送信中...",
+    "submitSuccess": "申請ID: {id} — 審査後に担当者が確認します。",
+    "submitError": "送信に失敗しました。しばらくしてから再試行してください。",
+    "epAmount": "売却する EP 数量",
+    "sourceWallet": "あなたの LIFAI EP ウォレット番号",
+    "sourceWalletPlaceholder": "例: LIFAI-USER-001122",
+    "payoutNetwork": "USDT 受取ネットワーク",
+    "payoutWallet": "USDT 受取ウォレットアドレス",
+    "payoutWalletPlaceholder": "受取先ウォレットアドレスを入力",
+    "planConfirmed": "選択したプラン、手数料、見込み受取額を確認しました。",
+    "transferConfirmed": "申請確認後に、指定された LIFAI 側ウォレットへ正確な EP 数量を送付することを理解しています。",
+    "walletConfirmed": "指定した受取ウォレットは自分が管理しており、選択したネットワークで USDT を受け取れます。",
+    "submitRequest": "売却申請を送信",
+    "summaryHeading": "見込み精算内容",
+    "selectedPlan": "選択プラン",
+    "epLabel": "EP 数量",
+    "networkLabel": "受取ネットワーク",
+    "stepsHeading": "精算の流れ",
+    "steps": {
+      "1": "売却申請を送信し、あなた専用のウォレットアドレス（LFW-XXXXXX）を確認します。",
+      "2": "aisalon 内の「LFWへ送付」機能で、表示されたアドレス宛に EP を送付します。",
+      "3": "Lootify 側で EP の着金を自動確認します（数分かかる場合があります）。",
+      "4": "着金確認後、指定の USDT ウォレットへ送金されます。"
+    },
+    "warningTitle": "ご注意（必ずお読みください）",
+    "warningBody": "・一度送付した EP はいかなる場合も返金・返還されません。仮想通貨の送金と同様に取り扱ってください。\n・着金確認には数分かかることがあります。確認完了まで画面を閉じないでください。\n・誤ったアドレスへの送付や、申請と異なる EP 数量の送付は保証対象外です。",
+    "backToLifai": "LIFAI 概要へ戻る",
+    "sendEpTitle": "LIFAIOVからEPを送付してください",
+    "sendEpInstruction": "LIFAIOVのGiftEP送信ページで、送信先に以下のアドレスを入力してください。",
+    "sendEpAmountNote": "送付数量: {amount} EP",
+    "payoutWalletError": "USDT受取ウォレットアドレスを入力してください。",
+    "depositWaiting": "⏳ EP入金を確認中です...",
+    "depositConfirmed": "✓ EP入金を確認しました。USDTの送金手続きを開始します。",
+    "depositTimeout": "入金確認がタイムアウトしました。EPを送付済みの場合はお問い合わせください。",
+    "confirmError": "申請前に、プラン確認と送付確認にすべて同意する必要があります。",
+    "epMinimumError": "売却申請の最小数量は 100 EP です。",
+    "walletError": "ウォレット情報の取得に失敗しました。",
+    "sellHistoryTitle": "LIFAI EP 売却申請履歴",
+    "checkDeposit": "入金確認",
+    "openRequestExists": "未完了の売却申請があります。プロフィールの申請履歴から入金を完了してください。",
+    "depositInsufficient": "⚠ 入金不足: 受領 {received} EP / 不足 {shortfall} EP。不足分 {shortfall} EP を同じアドレスへ再送金してください。",
+    "depositOverpaid": "申請数量を {overpaid} EP 超える入金がありましたが、そのまま受領しました。",
+    "recheckDeposit": "再確認する",
+    "statusWaiting": "入金待ち",
+    "statusInsufficient": "入金不足",
+    "statusConfirmed": "入金確認済み"
+  },
+  "guide": {
+    "hero": {
+      "eyebrow": "HOW IT WORKS",
+      "title": "ゲームアイテムを最速で取引",
+      "body": "Lootify は、買い手と売り手がゲームアイテムを安全かつ簡単に取引できるマーケットプレイスです。出品を探し、注文し、受け渡しまでの流れをひとつの画面で確認できます。",
+      "browse": "出品を見る",
+      "sell": "販売を始める",
+      "imageLabel": "マーケット画面"
+    },
+    "how": {
+      "steps": [
+        {
+          "title": "探す",
+          "body": "ゲームを選び、販売中の出品を価格や内容で比較できます。"
+        },
+        {
+          "title": "購入する",
+          "body": "価格と注文内容を確認し、案内に沿ってチェックアウトします。"
+        },
+        {
+          "title": "受け取る",
+          "body": "注文確定後、販売者と連携してアイテムを受け取ります。"
+        }
+      ]
+    },
+    "buyers": {
+      "eyebrow": "For Buyers",
+      "title": "数分でプレイを再開",
+      "steps": [
+        {
+          "title": "アカウント作成",
+          "body": "メールアドレスで登録し、購入履歴や注文状況を管理できるようにします。",
+          "imageLabel": "アカウント登録"
+        },
+        {
+          "title": "ゲーム出品を探す",
+          "body": "カテゴリやゲーム名で絞り込み、価格、受け渡し時間、販売者情報を比較します。",
+          "imageLabel": "出品一覧"
+        },
+        {
+          "title": "注文する",
+          "body": "商品内容と合計金額を確認し、チェックアウト手順に進みます。"
+        },
+        {
+          "title": "アイテムを受け取る",
+          "body": "案内に従って販売者と連携し、取引完了まで進めます。"
+        }
+      ]
+    },
+    "sellers": {
+      "eyebrow": "For Sellers",
+      "title": "ゲーム資産を現金化",
+      "steps": [
+        {
+          "title": "アカウント作成",
+          "body": "共通の登録フローで販売者プロフィールと出品管理の準備をします。"
+        },
+        {
+          "title": "アイテムを出品",
+          "body": "タイトル、価格、説明、受け渡し条件など、購入前に必要な情報を入力します。",
+          "imageLabel": "出品フォーム"
+        },
+        {
+          "title": "購入を受ける",
+          "body": "買い手が注文すると、注文内容を確認して受け渡しの準備を進めます。"
+        },
+        {
+          "title": "納品して入金確認",
+          "body": "アイテムを納品し、注文完了後に精算状況を確認します。",
+          "imageLabel": "取引完了"
+        }
+      ]
+    },
+    "trust": {
+      "cards": [
+        {
+          "icon": "shield",
+          "title": "安全な決済",
+          "body": "注文記録と保護された決済フローに基づいて取引できます。"
+        },
+        {
+          "icon": "bolt",
+          "title": "スピード納品",
+          "body": "買い手と売り手の確認が完了すれば、多くの取引は短時間で進みます。"
+        },
+        {
+          "icon": "star",
+          "title": "確認しやすい出品",
+          "body": "販売者情報と取引内容を見ながら、納得して購入できます。"
+        }
+      ]
+    },
+    "faq": {
+      "title": "FAQ",
+      "items": [
+        {
+          "title": "どの支払い方法に対応していますか？",
+          "body": "利用できる支払い方法は、注文確定前のチェックアウト画面で確認できます。"
+        },
+        {
+          "title": "Lootify での取引は安全ですか？",
+          "body": "注文履歴が残る取引フローとサポート導線で、安全に進められるよう設計しています。"
+        },
+        {
+          "title": "納品にはどのくらい時間がかかりますか？",
+          "body": "ゲームや販売者によって異なりますが、多くの注文は当日中の完了を目指します。"
+        },
+        {
+          "title": "注文で問題が起きた場合は？",
+          "body": "注文情報を添えてサポートへ連絡すると、状況確認と解決手順の案内を受けられます。"
+        },
+        {
+          "title": "販売者はどのように入金を受け取りますか？",
+          "body": "納品と注文確認が完了した後、販売者向けの精算処理が進みます。"
+        }
+      ]
+    },
+    "cta": {
+      "title": "今すぐ始めましょう",
+      "body": "欲しいゲームアイテムを探すか、無料アカウントを作成して Lootify で販売を始めましょう。",
+      "browse": "出品を見る",
+      "create": "無料アカウント作成"
+    }
+  },
+  "contact": {
+    "eyebrow": "CONTACT",
+    "title": "お問い合わせ",
+    "subtitle": "注文、出品、アカウント、その他のご相談をこちらから送信できます。内容を確認のうえ、順次ご案内します。",
+    "formTitle": "お問い合わせフォーム",
+    "formSubtitle": "必要事項を入力して送信してください。",
+    "fields": {
+      "name": "お名前",
+      "email": "メールアドレス",
+      "category": "お問い合わせ種別",
+      "categoryPlaceholder": "種別を選択してください",
+      "orderId": "注文ID",
+      "orderIdPlaceholder": "例: ORD-123456",
+      "subject": "件名",
+      "message": "お問い合わせ内容"
+    },
+    "categories": {
+      "order": "注文について",
+      "seller": "出品について",
+      "account": "アカウントについて",
+      "other": "その他"
+    },
+    "note": "注文IDや対象ゲーム名、発生している状況を詳しくご記入いただくと、確認がスムーズになります。",
+    "submit": "送信する",
+    "submitting": "送信中...",
+    "success": {
+      "eyebrow": "SENT",
+      "title": "お問い合わせを受け付けました",
+      "body": "お問い合わせ内容を受け付けました。内容を確認のうえ、必要に応じてご案内します。",
+      "referenceLabel": "受付番号",
+      "another": "別のお問い合わせを作成"
+    },
+    "cards": {
+      "responseTitle": "返信目安",
+      "responseBody": "内容を確認後、必要に応じて順次ご案内します。",
+      "includeTitle": "記載すると早い内容",
+      "includeBody": "注文ID、対象ゲーム名、問題が起きた手順、確認したい内容を入れると整理しやすくなります。",
+      "scopeTitle": "対応予定の相談",
+      "scopeBody": "注文トラブル、出品内容、アカウント状態、その他一般的なお問い合わせに対応しています。"
+    }
+  }
+}

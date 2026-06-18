@@ -1,0 +1,440 @@
+{
+  "header": {
+    "search": "搜索游戏标题",
+    "login": "登录",
+    "register": "注册",
+    "nav": {
+      "pc": "PC游戏",
+      "mobile": "手机游戏",
+      "other": "其他",
+      "all": "全部标题"
+    }
+  },
+  "userMenu": {
+    "loading": "加载中...",
+    "login": "登录",
+    "signup": "注册",
+    "settings": "设置",
+    "logout": "退出登录",
+    "signingOut": "正在退出..."
+  },
+  "home": {
+    "rankingTitle": "热门游戏排行榜",
+    "mobileRanking": "手机游戏排行榜",
+    "pcRanking": "PC游戏排行榜",
+    "listingsTitle": "最新商品",
+    "listingUnit": "条"
+  },
+  "category": {
+    "title": "游戏标题列表",
+    "pc": "PC游戏",
+    "mobile": "手机游戏",
+    "other": "其他"
+  },
+  "sidebar": {
+    "categoryTitle": "分类",
+    "searchTitle": "搜索标题",
+    "searchPlaceholder": "输入游戏名称",
+    "bannerSignupAlt": "注册横幅",
+    "bannerPcAlt": "PC游戏横幅",
+    "bannerMobileAlt": "手机游戏横幅"
+  },
+  "footer": {
+    "terms": "服务条款",
+    "privacy": "隐私政策",
+    "contact": "联系我们",
+    "guide": "使用指南"
+  },
+  "carousel": {
+    "slide1": "24/7 实时交易服务",
+    "slide2": "适合新手的交易指南",
+    "slide3": "支持多种支付方式"
+  },
+  "game": {
+    "listingsTitle": "{name} 的商品列表",
+    "noListings": "当前没有可用商品"
+  },
+  "signup": {
+    "title": "创建账户",
+    "subtitle": "注册后即可开始结账并管理你的 Lootify 个人资料。",
+    "firstName": "名字",
+    "lastName": "姓氏",
+    "displayName": "显示名称",
+    "email": "电子邮箱",
+    "password": "密码",
+    "country": "国家",
+    "phone": "电话号码",
+    "marketing": "接收市场更新通知",
+    "submit": "创建账户",
+    "submitting": "创建中...",
+    "haveAccount": "已经有账户？",
+    "signin": "登录"
+  },
+  "verifyEmail": {
+    "title": "验证邮箱",
+    "subtitle": "请输入发送到 {email} 的 6 位验证码。",
+    "fallbackInbox": "你的邮箱",
+    "code": "验证码",
+    "submit": "验证邮箱",
+    "verifying": "验证中...",
+    "resend": "重新发送验证码",
+    "sending": "发送中...",
+    "resendSuccess": "新的验证码已发送。",
+    "back": "返回登录"
+  },
+  "login": {
+    "title": "登录",
+    "subtitle": "登录你的 Lootify 账户以继续结账。",
+    "verified": "邮箱验证已完成，请登录。",
+    "email": "电子邮箱",
+    "password": "密码",
+    "submit": "登录",
+    "submitting": "登录中...",
+    "needAccount": "还没有账户？",
+    "createOne": "立即注册"
+  },
+  "account": {
+    "profile": {
+      "loading": "正在加载个人资料...",
+      "signinRequired": "查看个人资料需要先登录。",
+      "title": "我的资料",
+      "subtitle": "查看你的账户信息和最近活动摘要。",
+      "editSettings": "编辑设置",
+      "displayName": "显示名称",
+      "email": "邮箱",
+      "fullName": "姓名",
+      "country": "国家",
+      "notSet": "未设置",
+      "accountStatus": "账户状态",
+      "status": "状态",
+      "emailVerified": "邮箱验证",
+      "verified": "已验证",
+      "notVerified": "未验证",
+      "lastLogin": "上次登录",
+      "noLoginHistory": "暂无登录记录",
+      "walletAddress": "EP 钱包"
+    },
+    "settings": {
+      "loading": "正在加载设置...",
+      "signinRequired": "更新账户设置需要先登录。",
+      "title": "账户设置",
+      "subtitle": "您可以修改显示名称、联系方式等个人资料信息。",
+      "saved": "您的更改已保存。",
+      "displayName": "显示名称",
+      "country": "国家",
+      "phone": "电话号码",
+      "email": "电子邮箱",
+      "emailNote": "当前版本暂不支持修改邮箱地址。",
+      "save": "保存更改"
+    }
+  },
+  "item": {
+    "gameLabel": "游戏",
+    "categoryLabel": "分类",
+    "deliveryLabel": "交付",
+    "availabilityLabel": "库存",
+    "digitalGoods": "数字商品",
+    "deliveryValue": "24小时内",
+    "availabilityValue": "有库存",
+    "sellerLabel": "卖家",
+    "sellerValue": "已验证卖家 | 100% 好评",
+    "priceNote": "固定价格 | 无隐藏费用",
+    "buyNow": "立即购买",
+    "badge1": "安全结账",
+    "badge2": "可信市场",
+    "badge3": "受保护的购买流程"
+  },
+  "checkout": {
+    "title": "安全结账",
+    "subtitle": "继续之前请确认商品详情。",
+    "createDraftError": "无法创建结账会话。",
+    "unexpectedError": "发生错误，请稍后再试。",
+    "itemDetails": "商品详情",
+    "delivery": "交付：24小时内",
+    "digitalDelivery": "数字商品，无需物流配送。",
+    "paymentNote": "在你继续之前不会实际扣款。",
+    "orderSummary": "订单摘要",
+    "itemLabel": "商品",
+    "quantityLabel": "数量",
+    "totalLabel": "总计",
+    "continue": "继续支付",
+    "processing": "处理中...",
+    "badge1": "安全结账",
+    "badge2": "受保护的购买流程"
+  },
+  "paymentMock": {
+    "title": "支付网关尚未上线",
+    "line1": "你的结账会话已成功创建。",
+    "line2": "支付网关目前处于测试模式，尚未启用。",
+    "line3": "该流程已为未来接入正式支付做好准备。",
+    "tokenLabel": "结账令牌",
+    "statusLabel": "支付状态",
+    "statusValue": "已禁用 / 测试模式",
+    "home": "返回首页",
+    "profile": "前往我的购买"
+  },
+  "lifai": {
+    "eyebrow": "LIFAI OTC",
+    "landingTitle": "出售 EP 并以 USDT 结算",
+    "landingBody": "在 LIFAI 中，你可以提交 EP 卖出申请、确认结算方案、把 EP 转入指定钱包编号，并在审核完成后把 USDT 收到你指定的钱包地址。",
+    "cards": {
+      "planTitle": "1. 确认方案",
+      "planBody": "选择与你的卖出量匹配的方案，并在提交前确认手续费和预估 USDT 结算比例。",
+      "transferTitle": "2. 转入 EP",
+      "transferBody": "申请确认后，将准确数量的 EP 转入指定的 LIFAI 平台钱包编号。",
+      "payoutTitle": "3. 收到 USDT",
+      "payoutBody": "转账核验完成后，USDT 会打到你在申请中填写的钱包地址。"
+    },
+    "walletHint": "在卖出申请提交并确认方案之前，请不要提前转入 EP。",
+    "startSellRequest": "开始 EP 卖出申请",
+    "acceptedNetworks": "支持的 USDT 网络：TRC20 / ERC20 / BEP20",
+    "sellTitle": "LIFAI EP 卖出申请",
+    "sellSubtitle": "请确认结算方案，填写 EP 转出信息以及接收 USDT 的钱包地址。",
+    "planHeading": "选择结算方案",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "desc": "适合初次或少量出售。(4 EP = ¥1)"
+      },
+      "builder": {
+        "name": "Builder",
+        "desc": "适合持续出售的标准方案。(3.5 EP = ¥1)"
+      },
+      "automation": {
+        "name": "Automation",
+        "desc": "高效率的活跃出售方案。(3 EP = ¥1)"
+      },
+      "core": {
+        "name": "Core",
+        "desc": "认真追求成果的核心方案。(2.5 EP = ¥1)"
+      },
+      "infra": {
+        "name": "Infra",
+        "desc": "高级会员专属的顶级方案。(2 EP = ¥1)"
+      }
+    },
+    "epRateLabel": "EP 单价",
+    "epRateValue": "¥{rate} / EP",
+    "feeLabel": "服务费",
+    "feeValue": "8.5%",
+    "grossLabel": "扣费前",
+    "netLabel": "预计到账",
+    "usdtRateLabel": "JPY/USDT 汇率",
+    "rateUpdatedAt": "汇率更新: {time} JST",
+    "walletSectionTitle": "您的 EP 接收钱包",
+    "walletPersonalNote": "请将 EP 发送至此地址",
+    "walletNextRotate": "下次更新: 还有 {time}",
+    "walletLoading": "正在获取钱包信息...",
+    "submittingRequest": "提交中...",
+    "submitSuccess": "申请编号: {id} — 工作人员审核后将与您联系。",
+    "submitError": "提交失败，请稍后重试。",
+    "epAmount": "卖出的 EP 数量",
+    "sourceWallet": "你的 LIFAI EP 钱包编号",
+    "sourceWalletPlaceholder": "例如：LIFAI-USER-001122",
+    "payoutNetwork": "USDT 收款网络",
+    "payoutWallet": "USDT 收款钱包地址",
+    "payoutWalletPlaceholder": "输入你的收款钱包地址",
+    "planConfirmed": "我已确认所选方案、手续费和预估到账金额。",
+    "transferConfirmed": "我理解申请确认后，必须将准确数量的 EP 转入指定的 LIFAI 平台钱包编号。",
+    "walletConfirmed": "我确认填写的钱包地址由我本人控制，并且能在所选网络上接收 USDT。",
+    "submitRequest": "提交卖出申请",
+    "summaryHeading": "预估结算信息",
+    "selectedPlan": "所选方案",
+    "epLabel": "EP 数量",
+    "networkLabel": "收款网络",
+    "stepsHeading": "结算流程",
+    "steps": {
+      "1": "提交卖出申请并确认你的专属钱包地址（LFW-XXXXXX）。",
+      "2": "在 aisalon 中使用「发送至 LFW」功能，将 EP 转入显示的地址。",
+      "3": "Lootify 自动核验 EP 到账情况（可能需要数分钟）。",
+      "4": "确认到账后，USDT 将发送至你指定的收款钱包。"
+    },
+    "warningTitle": "重要提示（请务必阅读）",
+    "warningBody": "・EP 一经转出，在任何情况下均不予退还。请像对待加密货币转账一样谨慎操作。\n・到账确认可能需要数分钟，请勿在确认完成前关闭页面。\n・转入错误地址或数量与申请不符的情况不在保障范围内。",
+    "backToLifai": "返回 LIFAI 概览",
+    "sendEpTitle": "请从 LIFAIOV 发送 EP",
+    "sendEpInstruction": "请在 LIFAIOV 的 GiftEP 发送页面，将以下地址填入收款人栏。",
+    "sendEpAmountNote": "发送数量：{amount} EP",
+    "payoutWalletError": "请输入您的 USDT 收款钱包地址。",
+    "depositWaiting": "⏳ 正在等待 EP 入账...",
+    "depositConfirmed": "✓ 已确认 EP 入账，即将发起 USDT 转账。",
+    "depositTimeout": "入账确认超时。若已发送 EP，请联系客服。",
+    "confirmError": "提交前必须确认方案和转账说明。",
+    "epMinimumError": "卖出申请的最低数量为 100 EP。",
+    "walletError": "无法加载钱包信息。",
+    "sellHistoryTitle": "LIFAI EP 卖出申请历史",
+    "checkDeposit": "确认入账",
+    "openRequestExists": "您有未完成的出售申请。请先完成该申请的入金（可在个人资料的申请记录中查看）。",
+    "depositInsufficient": "⚠ 入金不足：已收到 {received} EP / 还差 {shortfall} EP。请将差额 {shortfall} EP 再次发送到同一地址。",
+    "depositOverpaid": "收到的 EP 超出申请数量 {overpaid} EP，超出部分已一并计入本次申请。",
+    "recheckDeposit": "重新确认",
+    "statusWaiting": "等待入金",
+    "statusInsufficient": "入金不足",
+    "statusConfirmed": "入金已确认"
+  },
+  "guide": {
+    "hero": {
+      "eyebrow": "HOW IT WORKS",
+      "title": "快速交易游戏道具",
+      "body": "Lootify 帮助买家和卖家用清晰、安全的流程交易游戏道具。你可以浏览商品、提交订单，并在平台内确认交付步骤。",
+      "browse": "浏览商品",
+      "sell": "开始出售",
+      "imageLabel": "市场看板"
+    },
+    "how": {
+      "steps": [
+        {
+          "title": "浏览",
+          "body": "选择游戏，并比较当前卖家的商品内容和价格。"
+        },
+        {
+          "title": "购买",
+          "body": "确认价格和订单内容，然后按照引导完成结账。"
+        },
+        {
+          "title": "收取",
+          "body": "订单确认后与卖家协作，完成道具交付。"
+        }
+      ]
+    },
+    "buyers": {
+      "eyebrow": "For Buyers",
+      "title": "几分钟内继续游戏",
+      "steps": [
+        {
+          "title": "创建账户",
+          "body": "使用邮箱注册，方便管理购买记录并接收订单更新。",
+          "imageLabel": "账户设置"
+        },
+        {
+          "title": "浏览游戏商品",
+          "body": "按分类和游戏筛选，比较价格、交付时间和卖家信息。",
+          "imageLabel": "商品列表"
+        },
+        {
+          "title": "提交订单",
+          "body": "检查商品和总价，然后进入结账流程。"
+        },
+        {
+          "title": "收取道具",
+          "body": "按照交付说明与卖家沟通，直到交易完成。"
+        }
+      ]
+    },
+    "sellers": {
+      "eyebrow": "For Sellers",
+      "title": "把游戏资产变现",
+      "steps": [
+        {
+          "title": "创建账户",
+          "body": "通过同一注册流程准备卖家资料，并管理之后的商品。"
+        },
+        {
+          "title": "发布商品",
+          "body": "填写标题、价格、说明和交付条件，让买家在购买前了解关键信息。",
+          "imageLabel": "发布表单"
+        },
+        {
+          "title": "获得订单",
+          "body": "买家下单后，查看订单详情并准备交付。"
+        },
+        {
+          "title": "交付并收款",
+          "body": "完成道具交付和订单确认后，查看结算状态。",
+          "imageLabel": "交易完成"
+        }
+      ]
+    },
+    "trust": {
+      "cards": [
+        {
+          "icon": "shield",
+          "title": "安全支付",
+          "body": "交易流程围绕清晰的订单记录和受保护的支付处理设计。"
+        },
+        {
+          "icon": "bolt",
+          "title": "快速交付",
+          "body": "买卖双方确认信息后，许多订单可以在短时间内完成。"
+        },
+        {
+          "icon": "star",
+          "title": "可信商品",
+          "body": "商品页展示卖家信息和交易内容，帮助买家放心选择。"
+        }
+      ]
+    },
+    "faq": {
+      "title": "FAQ",
+      "items": [
+        {
+          "title": "支持哪些支付方式？",
+          "body": "可用支付方式会在结账页面、确认订单前显示。"
+        },
+        {
+          "title": "在 Lootify 交易安全吗？",
+          "body": "Lootify 使用结构化订单流程、清晰记录和支持路径来保护交易体验。"
+        },
+        {
+          "title": "交付需要多久？",
+          "body": "交付时间取决于游戏和卖家，但许多订单会在当天完成。"
+        },
+        {
+          "title": "订单出现问题怎么办？",
+          "body": "请带上订单信息联系支持团队，以便查看情况并协助解决。"
+        },
+        {
+          "title": "卖家如何收款？",
+          "body": "交付和订单确认完成后，会进入卖家的结算流程。"
+        }
+      ]
+    },
+    "cta": {
+      "title": "准备开始了吗？",
+      "body": "寻找你需要的游戏道具，或创建免费账户开始在 Lootify 出售。",
+      "browse": "浏览商品",
+      "create": "创建免费账户"
+    }
+  },
+  "contact": {
+    "eyebrow": "CONTACT",
+    "title": "联系我们",
+    "subtitle": "你可以通过此表单提交订单、出售、账号或其他问题。我们会根据内容进行确认，并在需要时跟进处理。",
+    "formTitle": "联系表单",
+    "formSubtitle": "填写以下内容后即可提交咨询。",
+    "fields": {
+      "name": "姓名",
+      "email": "邮箱地址",
+      "category": "咨询类型",
+      "categoryPlaceholder": "请选择类型",
+      "orderId": "订单编号",
+      "orderIdPlaceholder": "例如：ORD-123456",
+      "subject": "主题",
+      "message": "咨询内容"
+    },
+    "categories": {
+      "order": "订单相关",
+      "seller": "出售相关",
+      "account": "账号相关",
+      "other": "其他"
+    },
+    "note": "如果能填写订单编号、游戏名称以及详细情况，将有助于更快确认你的问题。",
+    "submit": "提交咨询",
+    "submitting": "提交中...",
+    "success": {
+      "eyebrow": "SENT",
+      "title": "咨询已受理",
+      "body": "你的咨询已经提交。我们会确认内容，并在需要时继续跟进。",
+      "referenceLabel": "受理编号",
+      "another": "再创建一条咨询"
+    },
+    "cards": {
+      "responseTitle": "回复流程",
+      "responseBody": "咨询会按顺序确认，并在需要时提供后续说明。",
+      "includeTitle": "建议填写的信息",
+      "includeBody": "订单编号、游戏名称、问题经过以及希望确认的内容，会更方便后续处理。",
+      "scopeTitle": "预计支持范围",
+      "scopeBody": "订单问题、出售相关、账号问题以及其他常规咨询都在支持范围内。"
+    }
+  }
+}
