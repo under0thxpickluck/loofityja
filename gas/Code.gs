@@ -3,7 +3,7 @@
 //  スプレッドシート ID は下の SPREADSHEET_ID に設定済み
 // ============================================================
 
-const SPREADSHEET_ID = '1saLEUcSmnUf-J6d-bT63UZeZoqolAmi6XpU7R704C_k'
+const SPREADSHEET_ID = '1IrLMLZBgGHVXdh1gawhTgE3o72vxqzcKbxl3cyFZq5s'
 const SESSION_EXPIRE_HOURS = 24 * 7        // 7日間
 const VERIFY_CODE_EXPIRE_MIN = 30          // 確認コード有効期限（分）
 const SITE_NAME = 'Lootify'

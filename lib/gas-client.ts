@@ -62,13 +62,13 @@ export const gasClient = {
     return postToGas('resend_verify_code', { email })
   },
   login(email: string, password: string) {
-    return postToGas<User & { session_token: string }>('lootify_login', { email, password })
+    return postToGas<User & { session_token: string }>('login', { email, password })
   },
   me(sessionToken: string) {
-    return postToGas<User>('lootify_me', { session_token: sessionToken })
+    return postToGas<User>('me', { session_token: sessionToken })
   },
   logout(sessionToken: string) {
-    return postToGas('lootify_logout', { session_token: sessionToken })
+    return postToGas('logout', { session_token: sessionToken })
   },
   createPurchaseDraft(sessionToken: string, itemId: string, itemTitle: string, itemPrice: number) {
     return postToGas<PurchaseDraftResponse>('create_purchase_draft', {
@@ -82,7 +82,7 @@ export const gasClient = {
   },
   getLifaiWallets() {
     return postToGas<{ wallets: Array<{ slot: number; wallet_address: string; label: string }> }>(
-      'get_aisalon_wallets',
+      'get_lifai_wallets',
       {}
     )
   },
@@ -102,7 +102,7 @@ export const gasClient = {
         confirmed_at: string
       }>
       wallet_address: string
-    }>('get_aisalon_sell_requests', { session_token: sessionToken })
+    }>('get_lifai_sell_requests', { session_token: sessionToken })
   },
   createLifaiSellRequest(payload: {
     session_token: string
@@ -117,7 +117,7 @@ export const gasClient = {
     payout_network: string
     payout_wallet: string
   }) {
-    return postToGas<{ request_id: string; platform_wallet: string }>('create_aisalon_sell_request', payload)
+    return postToGas<{ request_id: string; platform_wallet: string }>('create_lifai_sell_request', payload)
   },
   updateLifaiDepositStatus(payload: {
     api_key: string
@@ -129,6 +129,6 @@ export const gasClient = {
     source_login_ids?: string[]
     confirmed_at?: string
   }) {
-    return postToGas<{ request_id: string }>('update_aisalon_deposit_status', payload)
+    return postToGas<{ request_id: string }>('update_lifai_deposit_status', payload)
   },
 }
