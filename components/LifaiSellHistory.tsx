@@ -18,9 +18,10 @@ type SellRequest = {
 }
 
 type DepositCheck = {
-  state: 'checking' | 'waiting' | 'insufficient' | 'confirmed'
+  state: 'checking' | 'waiting' | 'insufficient' | 'confirmed' | 'error'
   receivedEp?: number
   shortfallEp?: number
+  errorCode?: string
 }
 
 export default function LifaiSellHistory() {
@@ -72,8 +73,12 @@ export default function LifaiSellHistory() {
         }
         return
       }
-    } catch {}
-    setDepositMap(prev => ({ ...prev, [req.request_id]: { state: 'waiting' } }))
+      setDepositMap(prev => ({ ...prev, [req.request_id]: { state: 'error', errorCode: data.error ?? 'unknown' } }))
+      return
+    } catch (e) {
+      setDepositMap(prev => ({ ...prev, [req.request_id]: { state: 'error', errorCode: 'network_error' } }))
+      return
+    }
   }
 
   function statusBadgeClass(status: string) {
@@ -115,7 +120,7 @@ export default function LifaiSellHistory() {
                   <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${statusBadgeClass(req.status)}`}>
                     {statusLabel(req.status)}
                   </span>
-                  {req.status !== '入金確認済み' && depositStatus?.state !== 'checking' && depositStatus?.state !== 'confirmed' && (
+                  {req.status !== '入金確認済み' && depositStatus?.state !== 'checking' && depositStatus?.state !== 'confirmed' && depositStatus?.state !== 'error' && (
                     <button
                       onClick={() => checkDeposit(req)}
                       className="rounded border border-sky-200 bg-sky-50 px-2 py-1 text-xs text-sky-700 hover:bg-sky-100"
@@ -136,6 +141,19 @@ export default function LifaiSellHistory() {
                   )}
                   {depositStatus?.state === 'confirmed' && (
                     <p className="text-xs font-semibold text-emerald-600">{t('depositConfirmed')}</p>
+                  )}
+                  {depositStatus?.state === 'error' && (
+                    <div className="flex flex-col items-end gap-1">
+                      <p className="max-w-[220px] text-right text-xs font-semibold text-red-500">
+                        エラー: {depositStatus.errorCode}
+                      </p>
+                      <button
+                        onClick={() => checkDeposit(req)}
+                        className="rounded border border-gray-200 bg-white px-2 py-1 text-xs text-gray-500 hover:bg-gray-50"
+                      >
+                        再試行
+                      </button>
+                    </div>
                   )}
                 </div>
               </div>
