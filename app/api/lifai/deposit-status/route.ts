@@ -23,8 +23,11 @@ export async function POST(req: Request) {
   }
 
   // APIキー未設定のままAisalon側で入金を消費してしまわないよう、外部呼び出し前に検証する
-  const apiKey = process.env.AISALON_GAS_KEY ?? process.env.LOOTIFY_GAS_KEY ?? ''
-  if (!apiKey) {
+  // AISALON_GAS_KEY → Aisalon GAS の LOOTIFY_API_KEY（checkLfwDeposits / consumeLfwDeposits で使用）
+  // LOOTIFY_GAS_KEY → loofityja GAS の LOOTIFY_API_KEY（updateLifaiDepositStatus で使用）
+  const aisalonKey = process.env.AISALON_GAS_KEY ?? ''
+  const lootifyKey = process.env.LOOTIFY_GAS_KEY ?? ''
+  if (!aisalonKey || !lootifyKey) {
     return NextResponse.json({ ok: false, error: 'server_misconfigured' }, { status: 500 })
   }
 
@@ -67,7 +70,7 @@ export async function POST(req: Request) {
     }
     // 2) シートへ書き戻し（失敗しても入金はこの申請IDで消費済みのため、再チェックで復旧する）
     const update = await gasClient.updateLifaiDepositStatus({
-      api_key: apiKey,
+      api_key: lootifyKey,
       request_id: requestId,
       status: STATUS_CONFIRMED,
       received_ep: result.receivedEp,
@@ -81,7 +84,7 @@ export async function POST(req: Request) {
     }
   } else if (result.state === 'insufficient') {
     const update = await gasClient.updateLifaiDepositStatus({
-      api_key: apiKey,
+      api_key: lootifyKey,
       request_id: requestId,
       status: STATUS_INSUFFICIENT,
       received_ep: result.receivedEp,
@@ -95,7 +98,7 @@ export async function POST(req: Request) {
     }
   } else {
     // waiting: 最終チェック日時のみ更新（statusは変えない）
-    const update = await gasClient.updateLifaiDepositStatus({ api_key: apiKey, request_id: requestId })
+    const update = await gasClient.updateLifaiDepositStatus({ api_key: lootifyKey, request_id: requestId })
     if (!update.ok) {
       console.error('deposit-status: sheet write-back failed', { request_id: requestId, code: update.code })
     }
