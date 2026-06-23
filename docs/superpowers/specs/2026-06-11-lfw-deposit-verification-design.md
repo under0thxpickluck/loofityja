@@ -1,7 +1,7 @@
-# LFW入金検証システム 設計書
+﻿# LFW入金検証システム 設計書
 
 日付: 2026-06-11
-対象: Lootify (RMTsite) + LIFAIOV (C:\Users\unitu\lifaiov)
+対象: Lootify (RMTsite) + LIFAI (C:\Users\unitu\LIFAI)
 
 ## 背景・課題
 
@@ -14,7 +14,7 @@ LIFAI EP売却フローは申請作成までは動作するが、以下が未実
 5. `/api/ep/lfw-check` は認証なしで誰のアドレスでも照会可能
 6. `source_wallet.trim()` で undefined 時に500クラッシュ
 7. 認証メールが日本語（海外サイトとして英語にしたい）
-8. ローカル `.env.local` に `LIFAIOV_GAS_URL` / `LIFAIOV_GAS_KEY` がない（Vercelには設定済み）
+8. ローカル `.env.local` に `LIFAI_GAS_URL` / `LIFAI_GAS_KEY` がない（Vercelには設定済み）
 
 ## 決定事項（ユーザー承認済み）
 
@@ -32,9 +32,9 @@ LIFAI EP売却フローは申請作成までは動作するが、以下が未実
 ```
 ブラウザ ──> POST /api/lifai/deposit-status (session_token + request_id)
               │ 1. Lootify GAS: get_lifai_sell_requests で本人の申請か検証
-              │ 2. LIFAIOV GAS: check_lfw_deposit で全入金取得
+              │ 2. LIFAI GAS: check_lfw_deposit で全入金取得
               │ 3. 未消費分を合計して判定
-              │ 4a. 達成: LIFAIOV consume_lfw_deposits → Lootify update（確認済み）
+              │ 4a. 達成: LIFAI consume_lfw_deposits → Lootify update（確認済み）
               │ 4b. 不足: Lootify update（入金不足 + 受領/不足EP）
               └ 5. UIへ state を返す
 ```
@@ -51,12 +51,12 @@ LIFAI EP売却フローは申請作成までは動作するが、以下が未実
 
 - 有効合計 = `status == 'pending'` の入金 + `consumed_by == 当該request_id` の入金 の合計。
   consume後に書き戻しが失敗しても、再チェックで同じ結果になる（冪等・クラッシュ安全）
-- 確認済みの申請への deposit-status は LIFAIOV を呼ばず即 confirmed を返す
+- 確認済みの申請への deposit-status は LIFAI を呼ばず即 confirmed を返す
 - 1ユーザー1未完了申請の制約により「このアドレスの未消費入金 = この申請の入金」が成立
 
 ## 変更詳細
 
-### 1. LIFAIOV側 GAS (`C:\Users\unitu\lifaiov\gas\Code.gs`)
+### 1. LIFAI側 GAS (`C:\Users\unitu\LIFAI\gas\Code.gs`)
 
 - 新アクション `consume_lfw_deposits`（既存同様 key=SECRET 必須）
   - 入力: `{ lfw_address, deposit_ids: string[], consumed_by: string }`
@@ -82,7 +82,7 @@ LIFAI EP売却フローは申請作成までは動作するが、以下が未実
   （旧データ互換: 申請者ユーザーID が空の行は platform_wallet 一致でフォールバック）。
   レスポンスに status / 受領EP合計 / 不足EP / 入金確認日時 を含める
 - LifaiSellRequests 追加列（既存14列の右に追加。getSheet新規作成時はヘッダーに含める）:
-  `申請者ユーザーID` `受領EP合計` `不足EP` `充当入金ID` `送信元LIFAIOV_ID` `入金確認日時` `最終チェック日時`
+  `申請者ユーザーID` `受領EP合計` `不足EP` `充当入金ID` `送信元LIFAI_ID` `入金確認日時` `最終チェック日時`
 - 認証メール（signup / resend_verify_code）を英語テンプレートに変更:
   - 件名: `[Lootify] Verify your email address` / `[Lootify] Your new verification code`
   - 本文: 英語のプロフェッショナルな文面（コード、有効期限30分、心当たりがない場合の注記）
@@ -97,7 +97,7 @@ LIFAI EP売却フローは申請作成までは動作するが、以下が未実
   - レート取得失敗時は既存どおり502
 - 新設 `app/api/lifai/deposit-status/route.ts`:
   - 入力: `{ session_token, request_id }`（不正JSON/欠落は400）
-  - 上記アーキテクチャのフローを実装。LIFAIOVへは `LIFAIOV_GAS_URL` + `LIFAIOV_GAS_KEY`、
+  - 上記アーキテクチャのフローを実装。LIFAIへは `LIFAI_GAS_URL` + `LIFAI_GAS_KEY`、
     Lootify GAS更新へは `LOOTIFY_GAS_KEY`（サーバー専用env）を使用
   - 出力: `{ ok, state: 'waiting'|'insufficient'|'confirmed', required_ep, received_ep, shortfall_ep, overpaid_ep }`
   - 毎チェックで `最終チェック日時` を書き戻す（waiting時も）
@@ -120,7 +120,7 @@ LIFAI EP売却フローは申請作成までは動作するが、以下が未実
 
 | 変数 | 場所 | 状態 |
 |---|---|---|
-| `LIFAIOV_GAS_URL` / `LIFAIOV_GAS_KEY` | Vercel | 設定済み。ローカル `.env.local` には要追加（ユーザー作業） |
+| `LIFAI_GAS_URL` / `LIFAI_GAS_KEY` | Vercel | 設定済み。ローカル `.env.local` には要追加（ユーザー作業） |
 | `LOOTIFY_GAS_KEY` | Vercel + `.env.local` | 新規。GAS Script Properties `LOOTIFY_API_KEY` と同値（ユーザー作業） |
 
 ## 壊さないための事前チェック・検証

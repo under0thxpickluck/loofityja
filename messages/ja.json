@@ -1,4 +1,4 @@
-{
+﻿{
   "header": {
     "search": "ゲームタイトルを検索",
     "login": "ログイン",
@@ -252,8 +252,8 @@
     "warningTitle": "ご注意（必ずお読みください）",
     "warningBody": "・一度送付した EP はいかなる場合も返金・返還されません。仮想通貨の送金と同様に取り扱ってください。\n・着金確認には数分かかることがあります。確認完了まで画面を閉じないでください。\n・誤ったアドレスへの送付や、申請と異なる EP 数量の送付は保証対象外です。",
     "backToLifai": "LIFAI 概要へ戻る",
-    "sendEpTitle": "LIFAIOVからEPを送付してください",
-    "sendEpInstruction": "LIFAIOVのGiftEP送信ページで、送信先に以下のアドレスを入力してください。",
+    "sendEpTitle": "LIFAIからEPを送付してください",
+    "sendEpInstruction": "LIFAIのGiftEP送信ページで、送信先に以下のアドレスを入力してください。",
     "sendEpAmountNote": "送付数量: {amount} EP",
     "payoutWalletError": "USDT受取ウォレットアドレスを入力してください。",
     "depositWaiting": "⏳ EP入金を確認中です...",

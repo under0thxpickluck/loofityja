@@ -1,4 +1,4 @@
-# LFW入金検証システム 実装進捗
+﻿# LFW入金検証システム 実装進捗
 
 最終更新: 2026-06-11
 ブランチ: `feature/lfw-deposit-verification`
@@ -11,8 +11,8 @@
 - `npm test`: **既存の失敗あり**（5スイート8件: LifaiWalletRoute / LifaiSellRequestRoute / LifaiSellRequestForm / GameListingList / ListingCard — 今回の変更前から失敗。lifai系3つは本実装で更新・削除し解消、GameListingList / ListingCard はスコープ外の既存問題として残る）
 - `npx tsc --noEmit`: `__tests__/` のみエラー（@types/jest未設定の既存問題）。ゲートは「`__tests__/` 以外に新規エラーを出さない」
 
-### Task 1: LIFAIOV側GAS consume_lfw_deposits ✅
-リポジトリ: `C:\Users\unitu\lifaiov`
+### Task 1: LIFAI側GAS consume_lfw_deposits ✅
+リポジトリ: `C:\Users\unitu\LIFAI`
 - `2383677` consume_lfw_depositsアクション追加（dispatch行・checkLfwDeposit_へのconsumed_by追加含む）
 - `698429f` レビュー反映: lock_timeout処理 / status最後書き（部分更新セーフ）/ deposit_idsの空文字フィルタ
 - レビュー済み（スペック準拠✅・品質✅）
@@ -21,11 +21,11 @@
 - `22d5684` `lib/lifai-deposit.ts` + `lib/__tests__/lifai-deposit.test.ts`（7ケース、全パス）
 - TDD実施（失敗確認→実装→パス）。レビュー承認済み
 
-### Task 3: LIFAIOVクライアント ✅
-- `2423545` `lib/lifaiov-client.ts`（サーバー専用 check/consume、env: LIFAIOV_GAS_URL/KEY）
+### Task 3: LIFAIクライアント ✅
+- `2423545` `lib/LIFAI-client.ts`（サーバー専用 check/consume、env: LIFAI_GAS_URL/KEY）
 
 ### Task 4: Lootify GAS 認証・1件制限・書き戻し ✅
-- `18154c3` SHEET_HEADERS拡張（日本語7列: 申請者ユーザーID/受領EP合計/不足EP/充当入金ID/送信元LIFAIOV_ID/入金確認日時/最終チェック日時）、requireSessionUser_、createLifaiSellRequest認証化+1件制限、updateLifaiDepositStatus（Script Properties `LOOTIFY_API_KEY` 必須）、getLifaiSellRequestsのユーザーID基準化（旧データはplatform_walletフォールバック）
+- `18154c3` SHEET_HEADERS拡張（日本語7列: 申請者ユーザーID/受領EP合計/不足EP/充当入金ID/送信元LIFAI_ID/入金確認日時/最終チェック日時）、requireSessionUser_、createLifaiSellRequest認証化+1件制限、updateLifaiDepositStatus（Script Properties `LOOTIFY_API_KEY` 必須）、getLifaiSellRequestsのユーザーID基準化（旧データはplatform_walletフォールバック）
 - `402e3eb` レビュー反映: 申請作成をLockServiceで保護（同時リクエストの1件制限すり抜け防止）
 - レビュー済み（スペック準拠✅・品質: 承認）
 
@@ -70,7 +70,7 @@
 - レビュー承認（Task 12と合同）
 
 ### Task 13: 環境変数ドキュメント＋総合検証 ✅
-- `75a401c` `.env.local.example` にLIFAIOV_GAS_URL/KEY・LOOTIFY_GAS_KEYを追記
+- `75a401c` `.env.local.example` にLIFAI_GAS_URL/KEY・LOOTIFY_GAS_KEYを追記
 - 総合検証✅
   - jest: 83/85パス。失敗2スイート（GameListingList / ListingCard）はTask 0ベースラインから継続のスコープ外既存問題
   - tsc --noEmit: `__tests__` 以外エラー0（buildで`.next/types`再生成後に確認）
@@ -84,7 +84,7 @@
   1. OPEN_REQUEST_EXISTSメッセージに履歴への実リンクなし（設計は「リンク付き」、現状は文言のみ）
   2. ステータス文字列リテラルがdeposit-status routeとLifaiSellHistoryで重複定義（共有定数化が望ましい）
   3. ポーリング中のセッション失効が無言（waiting表示のままタイムアウト。再確認ボタンで自己回復）
-  4. lifaiov-clientがキーをクエリ文字列とbodyの両方で送信（ログ露出リスク、body単独で十分か要確認）
+  4. LIFAI-clientがキーをクエリ文字列とbodyの両方で送信（ログ露出リスク、body単独で十分か要確認）
 
 ## 残タスク
 
@@ -92,10 +92,10 @@
 
 ## 実装完了後のユーザー作業（コード外）
 
-1. `.env.local` に `LIFAIOV_GAS_URL` / `LIFAIOV_GAS_KEY`（Vercelの値をコピー）と `LOOTIFY_GAS_KEY`（新規生成）を追加
+1. `.env.local` に `LIFAI_GAS_URL` / `LIFAI_GAS_KEY`（Vercelの値をコピー）と `LOOTIFY_GAS_KEY`（新規生成）を追加
 2. Vercelに `LOOTIFY_GAS_KEY` を追加
 3. Lootify GAS再デプロイ + Script Properties `LOOTIFY_API_KEY`（= LOOTIFY_GAS_KEY と同値）設定
-4. LIFAIOV GAS再デプロイ
+4. LIFAI GAS再デプロイ
 5. E2E確認: 申請→EP送付(不足)→不足表示→再送→確認済み→シートのstatus/受領EP合計/充当入金ID確認
 
 ## メモ

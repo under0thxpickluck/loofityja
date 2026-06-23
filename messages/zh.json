@@ -1,4 +1,4 @@
-{
+﻿{
   "header": {
     "search": "搜索游戏标题",
     "login": "登录",
@@ -252,8 +252,8 @@
     "warningTitle": "重要提示（请务必阅读）",
     "warningBody": "・EP 一经转出，在任何情况下均不予退还。请像对待加密货币转账一样谨慎操作。\n・到账确认可能需要数分钟，请勿在确认完成前关闭页面。\n・转入错误地址或数量与申请不符的情况不在保障范围内。",
     "backToLifai": "返回 LIFAI 概览",
-    "sendEpTitle": "请从 LIFAIOV 发送 EP",
-    "sendEpInstruction": "请在 LIFAIOV 的 GiftEP 发送页面，将以下地址填入收款人栏。",
+    "sendEpTitle": "请从 LIFAI 发送 EP",
+    "sendEpInstruction": "请在 LIFAI 的 GiftEP 发送页面，将以下地址填入收款人栏。",
     "sendEpAmountNote": "发送数量：{amount} EP",
     "payoutWalletError": "请输入您的 USDT 收款钱包地址。",
     "depositWaiting": "⏳ 正在等待 EP 入账...",

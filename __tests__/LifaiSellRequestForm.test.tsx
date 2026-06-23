@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor, act } from '@testing-library/react'
+﻿import { fireEvent, render, screen, waitFor, act } from '@testing-library/react'
 
 global.fetch = jest.fn()
 
@@ -65,7 +65,7 @@ jest.mock('next-intl', () => ({
       payoutWalletError: 'Please enter your USDT payout wallet address.',
       submitSuccess: `Request ID: ${values?.id ?? ''} - A staff member will review and confirm.`,
       submitError: 'Submission failed. Please try again shortly.',
-      sendEpTitle: 'Send EP from LIFAIOV',
+      sendEpTitle: 'Send EP from LIFAI',
       sendEpInstruction: 'Enter the address below as the recipient.',
       walletSectionTitle: 'Current EP destination wallet',
       sendEpAmountNote: `Amount to send: ${values?.amount ?? ''} EP`,

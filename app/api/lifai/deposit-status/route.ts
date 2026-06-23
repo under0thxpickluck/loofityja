@@ -1,6 +1,6 @@
-import { NextResponse } from 'next/server'
+﻿import { NextResponse } from 'next/server'
 import { gasClient } from '@/lib/gas-client'
-import { checkLfwDeposits, consumeLfwDeposits } from '@/lib/lifaiov-client'
+import { checkLfwDeposits, consumeLfwDeposits } from '@/lib/LIFAI-client'
 import { evaluateDeposits } from '@/lib/lifai-deposit'
 
 export const runtime = 'nodejs'
@@ -43,7 +43,7 @@ export async function POST(req: Request) {
 
   const requiredEp = Number(request.ep_amount) || 0
 
-  // 確認済みならLIFAIOVを呼ばず即返す
+  // 確認済みならLIFAIを呼ばず即返す
   if (request.status === STATUS_CONFIRMED) {
     const received = Number(request.received_ep) || requiredEp
     return NextResponse.json({
@@ -55,13 +55,13 @@ export async function POST(req: Request) {
 
   const check = await checkLfwDeposits(request.platform_wallet)
   if (!check || !check.ok || !Array.isArray(check.deposits)) {
-    return NextResponse.json({ ok: false, error: 'lifaiov_unreachable' }, { status: 502 })
+    return NextResponse.json({ ok: false, error: 'LIFAI_unreachable' }, { status: 502 })
   }
 
   const result = evaluateDeposits(check.deposits, requestId, requiredEp)
 
   if (result.state === 'confirmed') {
-    // 1) 充当する入金をLIFAIOV側で消費済みにする（先に実行。失敗したら書き戻さない）
+    // 1) 充当する入金をLIFAI側で消費済みにする（先に実行。失敗したら書き戻さない）
     if (result.pendingDepositIds.length > 0) {
       const consumed = await consumeLfwDeposits(request.platform_wallet, result.pendingDepositIds, requestId)
       if (!consumed || !consumed.ok) {

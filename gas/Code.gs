@@ -1,4 +1,4 @@
-// ============================================================
+﻿// ============================================================
 //  Lootify – Google Apps Script バックエンド
 //  スプレッドシート ID は下の SPREADSHEET_ID に設定済み
 // ============================================================
@@ -62,11 +62,11 @@ const SHEET_HEADERS = {
   Purchases:        ['id','user_id','item_id','item_title','item_price','currency','quantity','status','payment_url','created_at'],
   LifaiWallets:     ['slot','wallet_address','label','active'],
   LifaiSellRequests:['request_id','plan','ep_amount','ep_rate_jpy','usdt_rate_jpy','gross_usdt','fee_usdt','net_usdt','source_wallet','payout_network','payout_wallet','platform_wallet','status','created_at',
-                     '申請者ユーザーID','受領EP合計','不足EP','充当入金ID','送信元LIFAIOV_ID','入金確認日時','最終チェック日時'],
+                     '申請者ユーザーID','受領EP合計','不足EP','充当入金ID','送信元LIFAI_ID','入金確認日時','最終チェック日時'],
 }
 
 // LifaiSellRequests の追加列（既存シートには ensureLifaiColumns_ で後付けする）
-const LIFAI_NEW_COLUMNS = ['申請者ユーザーID','受領EP合計','不足EP','充当入金ID','送信元LIFAIOV_ID','入金確認日時','最終チェック日時']
+const LIFAI_NEW_COLUMNS = ['申請者ユーザーID','受領EP合計','不足EP','充当入金ID','送信元LIFAI_ID','入金確認日時','最終チェック日時']
 // 「未完了」とみなす申請ステータス（pendingは旧データ互換）
 const LIFAI_OPEN_STATUSES = ['pending', '入金待ち', '入金不足']
 
@@ -592,7 +592,7 @@ function updateLifaiDepositStatus(params) {
     if (params.deposit_ids !== undefined)
       setCellByKey(sheet, row, '充当入金ID', Array.isArray(params.deposit_ids) ? params.deposit_ids.join(', ') : String(params.deposit_ids))
     if (params.source_login_ids !== undefined)
-      setCellByKey(sheet, row, '送信元LIFAIOV_ID', Array.isArray(params.source_login_ids) ? params.source_login_ids.join(', ') : String(params.source_login_ids))
+      setCellByKey(sheet, row, '送信元LIFAI_ID', Array.isArray(params.source_login_ids) ? params.source_login_ids.join(', ') : String(params.source_login_ids))
     if (params.confirmed_at) setCellByKey(sheet, row, '入金確認日時', params.confirmed_at)
     setCellByKey(sheet, row, '最終チェック日時', new Date().toISOString())
 

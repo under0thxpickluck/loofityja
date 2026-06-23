@@ -1,4 +1,4 @@
-{
+﻿{
   "header": {
     "search": "Search game titles",
     "login": "Login",
@@ -252,8 +252,8 @@
     "warningTitle": "Important — Please Read Carefully",
     "warningBody": "• EP transfers are final and non-refundable under any circumstances. Treat them like cryptocurrency transactions.\n• Deposit confirmation may take a few minutes. Do not close the page until confirmation is complete.\n• Transfers to incorrect addresses or amounts that differ from your request are not covered.",
     "backToLifai": "Back to LIFAI overview",
-    "sendEpTitle": "Send EP from LIFAIOV",
-    "sendEpInstruction": "On the LIFAIOV GiftEP send page, enter the address below as the recipient.",
+    "sendEpTitle": "Send EP from LIFAI",
+    "sendEpInstruction": "On the LIFAI GiftEP send page, enter the address below as the recipient.",
     "sendEpAmountNote": "Amount to send: {amount} EP",
     "payoutWalletError": "Please enter your USDT payout wallet address.",
     "depositWaiting": "⏳ Waiting for EP deposit...",

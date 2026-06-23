@@ -1,4 +1,4 @@
-export type LfwDeposit = {
+﻿export type LfwDeposit = {
   deposit_id: string
   from_login_id: string
   amount: number
@@ -18,7 +18,7 @@ export type DepositEvaluation = {
   pendingDepositIds: string[]
   /** この申請に充当される全入金ID（pending + 本申請でconsumed済み） */
   usableDepositIds: string[]
-  /** 充当入金の送信元LIFAIOVログインID（重複除去） */
+  /** 充当入金の送信元LIFAIログインID（重複除去） */
   sourceLoginIds: string[]
 }
 
